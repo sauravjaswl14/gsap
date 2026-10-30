@@ -1,4 +1,3 @@
-// All page content lives here. Replace the placeholder values with your own.
 
 export type ArtKind = 'tideline' | 'fieldnotes' | 'orbit' | 'kiln';
 
@@ -42,13 +41,13 @@ export interface SocialLink {
 }
 
 export const profile = {
-  name: 'Mira Voss',
-  email: 'hello@miravoss.studio',
-  availability: 'Booking Jan 2027',
+  name: 'Saurav Jaiswal',
+  email: 'sauravjaiswal.dev@gmail.com',
+  availability: 'Available for remote roles',
   intro:
-    "I'm Mira, a product designer and creative developer. I design and build web products where motion explains what the interface is doing, then ship them in code.",
-  role: 'Design + front-end',
-  currently: 'Independent, 2021 to now',
+    "I'm Saurav, a software Engineer and a creative developer. I have a passion for creating interactive experiences that are both visually stunning and highly functional. With a strong background in Web applications development and a keen eye for design, I bring ideas to life through code.",
+  role: 'Full-stack Software Engineer',
+  currently: 'Urja Technologies',
 };
 
 export const navLinks = [
