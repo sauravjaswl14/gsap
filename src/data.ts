@@ -42,7 +42,7 @@ export interface SocialLink {
 
 export const profile = {
   name: 'Saurav Jaiswal',
-  email: 'sauravjaiswal.dev@gmail.com',
+  email: 'saurav14th@gmail.com',
   availability: 'Available for remote roles',
   intro:
     "I'm Saurav, a software Engineer and a creative developer. I have a passion for creating interactive experiences that are both visually stunning and highly functional. With a strong background in Web applications development and a keen eye for design, I bring ideas to life through code.",
@@ -59,58 +59,50 @@ export const navLinks = [
 
 export const projects: Project[] = [
   {
-    id: 'nexafin',
-    category: 'Fintech',
+    id: 'astra-erp',
+    category: 'Enterprise Software',
     year: '2026',
-    title: 'Nexafin',
+    title: 'Astra ERP',
     summary:
-      'A cash-flow dashboard for small studios. Charts redraw as you scrub the timeline, so forecasts feel like something you can steer.',
-    tags: ['Product design', 'React', 'GSAP'],
+      'A robust enterprise resource planning solution for companies and organizations. It streamlines operations, enhances productivity, and provides real-time insights for informed decision-making.',
+    tags: ['postgreSQL', 'prisma', 'React', 'GSAP', 'node.js', 'express.js', 'typescript'],
     art: 'tideline',
     artLabel: 'Abstract bar chart artwork for Tideline',
   },
   {
-    id: 'astra-erp',
-    category: 'Publishing',
+    id: 'tessel-marketplace',
+    category: 'Marketplace Application',
     year: '2025',
-    title: 'Astra ERP',
+    title: 'Tessel Marketplace',
     summary:
-      'A reading app for researchers. Highlights lift out of the page and file themselves into a notebook with a single gesture.',
-    tags: ['Interaction design', 'Design system', 'Swift'],
+      'A Marketplace where users can explore clothing products, Food products, groceries, and cosmetics. The interface is engaging, with smooth animations and transitions that make browsing a pleasure.',
+    tags: ['postgreSQL', 'prisma', 'React', 'GSAP', 'node.js', 'express.js', 'typescript'],
     art: 'fieldnotes',
     artLabel: 'Abstract stacked text artwork for Fieldnotes',
   },
   {
-    id: 'tessel-marketplace',
-    category: 'Data viz',
-    year: '2024',
-    title: 'Tessel Marketplace',
-    summary:
-      'An interactive atlas of 9,000 tracked satellites. Tessels fade in by altitude band, and a filter drawer narrows the sky without a page load.',
-    tags: ['WebGL', 'Data design', 'TypeScript'],
-    art: 'orbit',
-    artLabel: 'Abstract concentric circles artwork for Tessel Atlas',
-    metrics: [
-      { label: 'Objects', value: '9,000+' },
-      { label: 'Frame rate', value: '60 fps' },
-      { label: 'First orbit', value: '1.2 s' },
-    ],
-  },
-  {
     id: 'pro-store',
     category: 'E-commerce',
-    year: '2023',
+    year: '2024',
     title: 'Pro Store',
     summary:
-      'A storefront for a ceramics studio. Product pages open like a shelf, with each piece sliding into place as you scroll.',
-    tags: ['Brand', 'Shopify', 'Motion'],
+      'A Marketplace where users can explore products across various categories and also purchase them. The interface is engaging, with smooth animations and transitions that make browsing a pleasure.',
+    tags: ['Next.js', 'Turborepo', 'prisma', 'PostgreSQL', 'stripe', 'payment gateway', 'typescript'],
+    art: 'orbit',
+    artLabel: 'Abstract concentric circles artwork for Tessel Atlas',
+
+  },
+  {
+    id: 'Medico',
+    category: 'Healthcare',
+    year: '2023',
+    title: 'Medicox',
+    summary:
+      'A Healthcare application that allows users to book appointments with doctors, view their medical history, and access health-related information. The interface is user-friendly and intuitive, making it easy for users to navigate and find the information they need.',
+    tags: ['PostgreSQL', 'Prisma', 'Zod', 'Next.js'],
     art: 'kiln',
     artLabel: 'Abstract arches artwork for Kiln',
-    metrics: [
-      { label: 'Conversion', value: '+38%' },
-      { label: 'Mobile load', value: '2.1 s' },
-      { label: 'Concept to launch', value: '4 wks' },
-    ],
+
   },
 ];
 
