@@ -115,62 +115,72 @@ export const projects: Project[] = [
 ];
 
 export const marqueeItems: string[] = [
-  'Interaction design',
-  'Motion systems',
-  'Design engineering',
-  'Prototyping',
+  'Web design and development',
+  'Database management and optimization',
+  'Full-stack development',
+  'System design and architecture',
+  'Software engineering'
 ];
 
 export const aboutLead = {
-  before: 'I started as a print designer and moved to the web when I found that ',
-  emphasis: 'timing is a layout decision',
-  after:
-    '. Now I work with product teams to design the in-between states: the loading, the hover, the first second after a click.',
+  before: 'From crafting pixel-perfect designs to architecting full-stack systems, my evolution has always been driven by ',
+  emphasis: 'one goal: building high-performance digital experiences. ',
+  after: 'I specialize in designing scalable systems where speed meets seamless user experience. Today, I collaborate with cross-functional teams to build impactful products that drive real value for both users and the business.'
 };
 
 export const services: Service[] = [
-  { name: 'Product design', detail: 'Web and mobile' },
-  { name: 'Motion design', detail: 'GSAP, Lottie' },
-  { name: 'Front-end build', detail: 'React, TypeScript' },
-  { name: 'Design systems', detail: 'Tokens, docs' },
+  { name: 'Languages ', detail: 'JavaScript, Python, Java' },
+  { name: 'Front-end ', detail: 'React.js, Next.js, TailwindCSS' },
+  { name: 'Back-end ', detail: 'postgreSQL, Node.js, Express.js, Nest.js' },
+  { name: 'Tools', detail: 'git, docker, kubernetes, jest' },
 ];
 
 export const stats: Stat[] = [
-  { value: 38, label: 'products shipped' },
-  { value: 9, label: 'years designing for the web' },
+  { value: 15, label: 'products shipped' },
+  { value: 5, label: 'years designing for the web' },
   { value: 60, label: 'fps target on every build' },
 ];
 
 export const experience: Job[] = [
   {
-    period: '2021 to now',
-    role: 'Independent',
-    place: 'Design and build for startups and studios',
-    city: 'Remote',
+    period: '2026 to present',
+    role: 'Senior Software Engineer',
+    place: 'Urja Technologies pvt. Ltd',
+    city: 'Birgunj, Nepal',
   },
   {
-    period: '2018 to 2021',
-    role: 'Senior Product Designer',
-    place: 'Northwind Labs, analytics platform',
-    city: 'Berlin',
+    period: '2026 to present',
+    role: 'Mid Software Engineer',
+    place: 'Nexsewa Technologies pvt. Ltd',
+    city: 'Birgunj, Nepal',
   },
   {
-    period: '2016 to 2018',
-    role: 'Interaction Designer',
-    place: 'Parcel & Co, digital agency',
-    city: 'London',
+    period: '2024 to 2025',
+    role: 'Mid React Developer',
+    place: 'Online notes nepal pvt. Ltd',
+    city: 'Kathmandu, Nepal',
   },
   {
-    period: '2014 to 2016',
-    role: 'Junior Designer',
-    place: 'Studio Alder, print and identity',
-    city: 'Lisbon',
+    period: '2023 to 2024',
+    role: 'Associate Software Engineer',
+    place: 'AccessWorld Tech pvt. Ltd',
+    city: 'Lalitpur, Nepal',
+  },
+  {
+    period: '2022 to 2023',
+    role: 'Junior Software Engineer',
+    place: 'Tezash Tech pvt. Ltd.',
+    city: 'Birgunj, Nepal',
+  },
+  {
+    period: '2021 to 2022',
+    role: 'Intern',
+    place: 'Edureka.co',
+    city: 'Bangalore, India',
   },
 ];
 
 export const socials: SocialLink[] = [
-  { label: 'GitHub', href: 'https://github.com/' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
-  { label: 'Dribbble', href: 'https://dribbble.com/' },
-  { label: 'Read.cv', href: 'https://read.cv/' },
+  { label: 'GitHub', href: 'https://github.com/sauravjaswl14' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/saurav-jaiswal-96b288200/' },
 ];
