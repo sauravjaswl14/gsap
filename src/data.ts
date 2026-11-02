@@ -59,10 +59,10 @@ export const navLinks = [
 
 export const projects: Project[] = [
   {
-    id: 'tideline',
+    id: 'nexafin',
     category: 'Fintech',
     year: '2026',
-    title: 'Tideline',
+    title: 'Nexafin',
     summary:
       'A cash-flow dashboard for small studios. Charts redraw as you scrub the timeline, so forecasts feel like something you can steer.',
     tags: ['Product design', 'React', 'GSAP'],
@@ -70,10 +70,10 @@ export const projects: Project[] = [
     artLabel: 'Abstract bar chart artwork for Tideline',
   },
   {
-    id: 'fieldnotes',
+    id: 'astra-erp',
     category: 'Publishing',
     year: '2025',
-    title: 'Fieldnotes',
+    title: 'Astra ERP',
     summary:
       'A reading app for researchers. Highlights lift out of the page and file themselves into a notebook with a single gesture.',
     tags: ['Interaction design', 'Design system', 'Swift'],
@@ -81,15 +81,15 @@ export const projects: Project[] = [
     artLabel: 'Abstract stacked text artwork for Fieldnotes',
   },
   {
-    id: 'orbit-atlas',
+    id: 'tessel-marketplace',
     category: 'Data viz',
     year: '2024',
-    title: 'Orbit Atlas',
+    title: 'Tessel Marketplace',
     summary:
-      'An interactive atlas of 9,000 tracked satellites. Orbits fade in by altitude band, and a filter drawer narrows the sky without a page load.',
+      'An interactive atlas of 9,000 tracked satellites. Tessels fade in by altitude band, and a filter drawer narrows the sky without a page load.',
     tags: ['WebGL', 'Data design', 'TypeScript'],
     art: 'orbit',
-    artLabel: 'Abstract concentric circles artwork for Orbit Atlas',
+    artLabel: 'Abstract concentric circles artwork for Tessel Atlas',
     metrics: [
       { label: 'Objects', value: '9,000+' },
       { label: 'Frame rate', value: '60 fps' },
@@ -97,10 +97,10 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 'kiln',
+    id: 'pro-store',
     category: 'E-commerce',
     year: '2023',
-    title: 'Kiln',
+    title: 'Pro Store',
     summary:
       'A storefront for a ceramics studio. Product pages open like a shelf, with each piece sliding into place as you scroll.',
     tags: ['Brand', 'Shopify', 'Motion'],
