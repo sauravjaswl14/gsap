@@ -8,10 +8,12 @@ export default function Hero() {
         className="font-display text-[clamp(2.5rem,10.5vw,6.5rem)] font-extrabold leading-[0.92] tracking-[-0.04em] text-balance"
         aria-label="Interfaces that move with intent."
       >
-        <Line>I Build</Line>
-        <Line>Systems</Line>
+        <Line>Code</Line>
         <Line>
-          that <em className="not-italic text-accent">Scales.</em>
+          With <em className="not-italic text-accent">Purpose.</em>
+        </Line>
+        <Line>
+          Build With <em className="not-italic text-accent">Impact.</em>
         </Line>
       </h1>
       <div className="hero-rule mt-[clamp(32px,5vw,64px)] h-px bg-line" />
