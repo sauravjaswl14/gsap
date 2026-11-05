@@ -18,6 +18,16 @@ export interface Project {
   metrics?: Metric[];
 }
 
+export interface OfficeProject {
+  id: string;
+  category: string;
+  year: string;
+  title: string;
+  summary: string;
+  tags: string[];
+  metrics?: Metric[];
+}
+
 export interface Service {
   name: string;
   detail: string;
@@ -103,6 +113,42 @@ export const projects: Project[] = [
     art: 'kiln',
     artLabel: 'Abstract arches artwork for Kiln',
 
+  },
+];
+
+export const officeProjects: OfficeProject[] = [
+  {
+    id: 'grande-hospital',
+    category: 'Healthcare',
+    year: '2024',
+    title: 'Grande Hospital',
+    summary: "A Healthcare application that allows users to book appointments with doctors, view their medical history, and access health-related information. The interface is user-friendly and intuitive, making it easy for users to navigate and find the information they need.",
+    tags: ['React', 'Next.js', 'Laravel', 'MySQL'],
+  },
+
+  {
+    id: 'goodwill-finance',
+    category: 'Finance',
+    year: '2023',
+    title: 'Goodwill Finance',
+    summary: "Worked on a finance application that allows users to manage their finances, track expenses, and view financial reports. The interface is user-friendly and intuitive, making it easy for users to navigate and find the information they need.",
+    tags: ['React', 'Next.js', 'Laravel', 'MySQL'],
+  },
+  {
+    id: 'Hulas Remittance',
+    category: 'Finance',
+    year: '2023',
+    title: 'Hulas Remittance',
+    summary: "Remittance application that allows users to send and receive money internationally. The interface is user-friendly and intuitive, making it easy for users to navigate and find the information they need.",
+    tags: ['React', 'Next.js', 'Laravel', 'MySQL'],
+  },
+  {
+    id: 'Online Notes Nepal',
+    category: 'Education',
+    year: '2024',
+    title: 'Online Notes Nepal',
+    summary: "An educational platform that allows users to access study materials, notes, and resources for various subjects. The interface is user-friendly and intuitive, making it easy for users to navigate and find the information they need.",
+    tags: ['React', 'Next.js', 'Nest.js', 'Redis', 'PostgreSQL', 'MongoDB'],
   },
 ];
 

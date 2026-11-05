@@ -53,6 +53,28 @@ export function useAnimations(scope: RefObject<HTMLElement>) {
           },
         });
 
+        // Office project cards reveal with a soft lift and stagger as they enter
+        ScrollTrigger.batch('[data-office-card]', {
+          start: 'top 88%',
+          once: true,
+          onEnter: (elements) => {
+            gsap.fromTo(
+              elements,
+              { autoAlpha: 0, y: 28, scale: 0.985 },
+              {
+                autoAlpha: 1,
+                y: 0,
+                scale: 1,
+                duration: 1.15,
+                ease: 'power3.out',
+                stagger: 0.15,
+                overwrite: 'auto',
+                clearProps: 'transform,opacity,visibility',
+              },
+            );
+          },
+        });
+
         // Projects: artwork wipes open, text follows, artwork drifts as you scroll
         gsap.utils.toArray<HTMLElement>('.project').forEach((project) => {
           const art = project.querySelector('.art');

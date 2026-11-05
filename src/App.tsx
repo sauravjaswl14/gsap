@@ -17,8 +17,9 @@ export default function App() {
     <div ref={root}>
       <div className="progress" aria-hidden="true" />
 
-      <div className="px-5 md:px-10 lg:px-20 xl:px-40 2xl:px-60">
-        <Header />
+      <Header />
+
+      <div className="page-gutter">
         <main id="top">
           <Hero />
           <Work />
@@ -27,7 +28,7 @@ export default function App() {
 
       <Marquee />
 
-      <div className="px-5 md:px-10 lg:px-20 xl:px-40 2xl:px-60 ">
+      <div className="page-gutter">
         <About />
         <Experience />
         <Contact />

@@ -11,7 +11,7 @@ export default function About() {
       <SectionHead id="about-h" title="About" aside="Tech Stacks" />
       <div className="grid gap-8 md:grid-cols-[1.3fr_1fr] md:gap-24">
         <p
-          className="min-w-0 font-display text-2xl leading-[1.2] tracking-[-0.02em] text-pretty"
+          className="min-w-0 font-display text-[clamp(1.35rem,2.5vw,2rem)] leading-[1.2] tracking-[-0.02em] text-pretty"
           data-fade
         >
           {aboutLead.before}
@@ -24,7 +24,7 @@ export default function About() {
           {services.map((service, index) => (
             <li
               key={service.name}
-              className={`flex justify-between gap-4 border-line py-4 ${
+              className={`flex flex-wrap justify-between gap-x-4 gap-y-1 border-line py-4 ${
                 index === services.length - 1 ? "border-y" : "border-t"
               }`}
             >

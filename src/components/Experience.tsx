@@ -16,7 +16,7 @@ export default function Experience() {
           >
             <span className="mono text-muted">{job.period}</span>
             <div className="min-w-0">
-              <h4 className="font-display text-[1.35rem] font-semibold tracking-[-0.02em]">{job.role}</h4>
+              <h4 className="font-display text-[clamp(1.15rem,1.8vw,1.35rem)] font-semibold tracking-[-0.02em]">{job.role}</h4>
               <span className="text-muted">{job.place}</span>
             </div>
             <span className="mono text-muted">{job.city}</span>

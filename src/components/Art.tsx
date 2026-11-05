@@ -1,9 +1,9 @@
-import type { ArtKind } from '../data';
+import type { ArtKind } from "../data";
 
 // Abstract project artwork drawn with SVG shapes. Colors come from the --p1..--p4 tokens.
 function ArtShapes({ kind }: { kind: ArtKind }) {
   switch (kind) {
-    case 'tideline':
+    case "tideline":
       return (
         <>
           <rect width="800" height="600" fill="var(--bg-2)" />
@@ -23,10 +23,17 @@ function ArtShapes({ kind }: { kind: ArtKind }) {
             strokeLinecap="round"
           />
           <circle cx="690" cy="90" r="14" fill="var(--p4)" />
-          <line x1="80" y1="520" x2="720" y2="520" stroke="var(--p2)" strokeWidth="2" />
+          <line
+            x1="80"
+            y1="520"
+            x2="720"
+            y2="520"
+            stroke="var(--p2)"
+            strokeWidth="2"
+          />
         </>
       );
-    case 'fieldnotes':
+    case "fieldnotes":
       return (
         <>
           <rect width="800" height="600" fill="var(--bg-2)" />
@@ -48,7 +55,7 @@ function ArtShapes({ kind }: { kind: ArtKind }) {
           <circle cx="610" cy="130" r="26" fill="var(--p4)" />
         </>
       );
-    case 'orbit':
+    case "orbit":
       return (
         <>
           <rect width="800" height="600" fill="var(--p2)" />
@@ -69,15 +76,31 @@ function ArtShapes({ kind }: { kind: ArtKind }) {
           </g>
         </>
       );
-    case 'kiln':
+    case "kiln":
       return (
         <>
           <rect width="800" height="600" fill="var(--p4)" />
-          <path d="M130 540 V300 A110 110 0 0 1 350 300 V540 Z" fill="var(--p2)" />
-          <path d="M380 540 V230 A110 110 0 0 1 600 230 V540 Z" fill="var(--p1)" />
-          <path d="M630 540 V360 A60 60 0 0 1 750 360 V540 Z" fill="var(--p3)" />
+          <path
+            d="M130 540 V300 A110 110 0 0 1 350 300 V540 Z"
+            fill="var(--p2)"
+          />
+          <path
+            d="M380 540 V230 A110 110 0 0 1 600 230 V540 Z"
+            fill="var(--p1)"
+          />
+          <path
+            d="M630 540 V360 A60 60 0 0 1 750 360 V540 Z"
+            fill="var(--p3)"
+          />
           <circle cx="240" cy="300" r="34" fill="var(--p4)" />
-          <line x1="60" y1="540" x2="760" y2="540" stroke="var(--p2)" strokeWidth="3" />
+          <line
+            x1="60"
+            y1="540"
+            x2="760"
+            y2="540"
+            stroke="var(--p2)"
+            strokeWidth="3"
+          />
         </>
       );
   }
@@ -93,7 +116,7 @@ export default function Art({ kind, label, flip = false }: ArtProps) {
   return (
     <div
       className={`art relative aspect-[4/3] max-w-full overflow-hidden rounded-md bg-bg2 ${
-        flip ? 'md:order-2' : ''
+        flip ? "md:order-2" : ""
       }`}
       role="img"
       aria-label={label}
