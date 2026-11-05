@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
-import { navLinks, profile } from "../data";
+import { Mail } from "lucide-react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { navLinks, profile, socials } from "../data";
+import BrandMark from "./BrandMark";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,10 +22,12 @@ export default function Header() {
     >
       <div className="nav-inner page-gutter flex flex-wrap items-center justify-between gap-x-4 gap-y-2 py-[clamp(16px,2vw,24px)]">
         <a
-          className="font-display text-[clamp(1.1rem,2vw,1.25rem)] font-extrabold tracking-tight"
+          className="brand-link"
           href="#top"
+          aria-label={`${profile.name}, home`}
         >
-          {profile.name}
+          <BrandMark />
+          <span>{profile.name}</span>
         </a>
         <nav
           className="nav-links mono flex flex-wrap items-center gap-x-4 gap-y-2 sm:gap-x-7"
@@ -38,6 +43,31 @@ export default function Header() {
             {profile.availability}
           </span>
         </nav>
+        <div className="header-socials" aria-label="Social and contact links">
+          {socials.map((link) => {
+            const Icon = link.label === "GitHub" ? FaGithub : FaLinkedinIn;
+
+            return (
+              <a
+                key={link.label}
+                className="header-social-link"
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.label}
+              >
+                <Icon aria-hidden="true" />
+              </a>
+            );
+          })}
+          <a
+            className="header-social-link"
+            href={`mailto:${profile.email}`}
+            aria-label="Email"
+          >
+            <Mail aria-hidden="true" />
+          </a>
+        </div>
       </div>
     </header>
   );

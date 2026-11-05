@@ -3,7 +3,7 @@ import SectionHead from './SectionHead';
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-[clamp(56px,9vw,120px)]" aria-labelledby="xp-h">
+    <section id="experience" className="py-[clamp(40px,6vw,80px)]" aria-labelledby="xp-h">
       <SectionHead id="xp-h" title="Experience" />
       <ul>
         {experience.map((job, index) => (

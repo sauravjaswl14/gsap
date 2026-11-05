@@ -1,14 +1,16 @@
-import { useRef, useState } from 'react';
-import { profile, socials } from '../data';
-import Line from './Line';
+import { useRef, useState } from "react";
+import { Mail } from "lucide-react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { profile, socials } from "../data";
+import Line from "./Line";
 
 export default function Contact() {
   const emailRef = useRef<HTMLSpanElement>(null);
-  const [label, setLabel] = useState('Copy email');
+  const [label, setLabel] = useState("Copy email");
 
   const flash = (text: string) => {
     setLabel(text);
-    window.setTimeout(() => setLabel('Copy email'), 1800);
+    window.setTimeout(() => setLabel("Copy email"), 1800);
   };
 
   // Clipboard access can be refused, so fall back to selecting the address.
@@ -20,20 +22,20 @@ export default function Contact() {
     range.selectNodeContents(node);
     selection.removeAllRanges();
     selection.addRange(range);
-    flash('Selected');
+    flash("Selected");
   };
 
   const copyEmail = async () => {
     try {
       await navigator.clipboard.writeText(profile.email);
-      flash('Copied');
+      flash("Copied");
     } catch {
       selectEmail();
     }
   };
 
   return (
-    <section id="contact" className="py-[clamp(56px,9vw,120px)]" aria-labelledby="contact-h">
+    <section id="contact" className="py-3" aria-labelledby="contact-h">
       <h2
         id="contact-h"
         className="reveal-lines mb-[clamp(24px,4vw,48px)] font-display text-[clamp(2.4rem,8vw,7rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-balance"
@@ -42,6 +44,13 @@ export default function Contact() {
         <Line>should feel alive?</Line>
       </h2>
       <div className="flex flex-wrap items-center gap-4" data-fade>
+        <a
+          className="contact-mail-icon"
+          href={`mailto:${profile.email}`}
+          aria-label={`Email ${profile.email}`}
+        >
+          <Mail aria-hidden="true" />
+        </a>
         <span className="mail-text" ref={emailRef}>
           {profile.email}
         </span>
@@ -49,9 +58,23 @@ export default function Contact() {
           {label}
         </button>
       </div>
-      <div className="socials mono mt-10 flex flex-wrap gap-x-8 gap-y-3" data-fade>
+      <div
+        className="socials mono mt-10 flex flex-wrap gap-x-8 gap-y-3"
+        data-fade
+      >
         {socials.map((link) => (
-          <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer">
+          <a
+            key={link.label}
+            className="social-link"
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {link.label === "GitHub" ? (
+              <FaGithub aria-hidden="true" />
+            ) : (
+              <FaLinkedinIn aria-hidden="true" />
+            )}
             {link.label}
           </a>
         ))}

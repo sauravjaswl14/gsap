@@ -17,7 +17,7 @@ function ProjectRow({ project, number, reverse }: ProjectRowProps) {
 
   return (
     <article
-      className={`project grid grid-cols-1 items-center gap-6 border-t border-line py-8 md:gap-16 md:py-12 ${columns}`}
+      className={`project grid grid-cols-1 items-center gap-6 border-t border-line py-6 md:gap-12 md:py-8 ${columns}${reverse ? " project--reverse" : ""}`}
     >
       <Art kind={project.art} label={project.artLabel} flip={reverse} />
       <div className="p-body grid min-w-0 gap-4">
@@ -137,7 +137,7 @@ export default function Work() {
   return (
     <section
       id="work"
-      className="py-[clamp(56px,9vw,120px)]"
+      className="work-section py-[clamp(40px,6vw,80px)]"
       aria-labelledby="work-personal"
     >
       <SectionHead
@@ -153,10 +153,11 @@ export default function Work() {
           reverse={index % 2 === 1}
         />
       ))}
+      <div className="border-line my-12 border-t" />
       <SectionHead
         id="work-office"
-        title="Office projects"
-        aside="Selected collaborations"
+        title="Professional projects"
+        aside="2023-2026"
       />
       <div
         className="office-carousel-controls"
@@ -186,7 +187,7 @@ export default function Work() {
         className="office-carousel-track"
         ref={officeProjectsTrack}
         role="region"
-        aria-label="Office projects"
+        aria-label="Professional projects"
         aria-roledescription="carousel"
         tabIndex={0}
       >

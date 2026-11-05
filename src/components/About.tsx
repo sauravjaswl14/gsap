@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-[clamp(56px,9vw,120px)]"
+      className="py-[clamp(40px,6vw,80px)]"
       aria-labelledby="about-h"
     >
       <SectionHead id="about-h" title="About" aside="Tech Stacks" />
@@ -34,7 +34,7 @@ export default function About() {
           ))}
         </ul>
       </div>
-      <div className="mt-[clamp(40px,6vw,72px)] grid gap-6 sm:grid-cols-3">
+      <div className="mt-[clamp(28px,4vw,48px)] grid gap-6 sm:grid-cols-3">
         {stats.map((stat) => (
           <div key={stat.label}>
             <b

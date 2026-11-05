@@ -121,8 +121,16 @@ export const officeProjects: OfficeProject[] = [
     id: 'grande-hospital',
     category: 'Healthcare',
     year: '2024',
-    title: 'Grande Hospital',
+    title: 'Grande International Hospital',
     summary: "A Healthcare application that allows users to book appointments with doctors, view their medical history, and access health-related information. The interface is user-friendly and intuitive, making it easy for users to navigate and find the information they need.",
+    tags: ['React', 'Next.js', 'Laravel', 'MySQL'],
+  },
+  {
+    id: 'access-world',
+    category: 'System for purchasing and selling cloud and security services',
+    year: '2024',
+    title: 'Access World',
+    summary: "A cloud-based platform for purchasing and selling various cloud-related services and products. The interface is user-friendly and intuitive, making it easy for users to navigate and find the information they need.",
     tags: ['React', 'Next.js', 'Laravel', 'MySQL'],
   },
 
@@ -150,6 +158,22 @@ export const officeProjects: OfficeProject[] = [
     summary: "An educational platform that allows users to access study materials, notes, and resources for various subjects. The interface is user-friendly and intuitive, making it easy for users to navigate and find the information they need.",
     tags: ['React', 'Next.js', 'Nest.js', 'Redis', 'PostgreSQL', 'MongoDB'],
   },
+  {
+    id: 'Restaurant Management System',
+    category: 'Restaurant Management',
+    year: '2024',
+    title: 'Restaurant Management System',
+    summary: "A comprehensive solution (Multi-tenant architecture) for managing restaurant operations, including order processing, inventory management, and staff scheduling. The interface is user-friendly and intuitive, making it easy for users to navigate and find the information they need.",
+    tags: ['React', 'Next.js', 'Nest.js', 'Redis', 'PostgreSQL', 'MongoDB'],
+  },
+  {
+    id: 'Job portal',
+    category: 'Job Search',
+    year: '2024',
+    title: 'Job portal',
+    summary: "A platform for connecting job seekers with employers, offering features like job listings, application management, and career resources. The interface is user-friendly and intuitive, making it easy for users to navigate and find the information they need.",
+    tags: ['React', 'Next.js', 'Nest.js', 'Redis', 'PostgreSQL', 'MongoDB'],
+  },
 ];
 
 export const marqueeItems: string[] = [
@@ -167,10 +191,13 @@ export const aboutLead = {
 };
 
 export const services: Service[] = [
-  { name: 'Languages ', detail: 'JavaScript, Python, Java' },
+  { name: 'Languages ', detail: 'Java, python, JavaScript, Typescript, Go' },
   { name: 'Front-end ', detail: 'React.js, Next.js, TailwindCSS' },
   { name: 'Back-end ', detail: 'postgreSQL, Node.js, Express.js, Nest.js' },
-  { name: 'Tools', detail: 'git, docker, kubernetes, jest' },
+  {
+    name: 'Testing ', detail: ' jest, playwright'
+  },
+  { name: 'Tools', detail: 'git, docker,kubernetes, AWS' },
 ];
 
 export const stats: Stat[] = [
